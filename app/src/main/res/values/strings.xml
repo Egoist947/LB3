@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Music Shop</string>
+    <string-array name="instruments">
+        <item>guitar</item>
+        <item>drum</item>
+        <item>keyboard</item>
+    </string-array>
+</resources>

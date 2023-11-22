@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Страница заказа"
+        android:textIsSelectable="false"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="157dp"
+            android:layout_alignParentTop="false"
+            android:longClickable="false"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/skidos" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:text="Введите ваше имя:"
+        android:textColor="#A9A9A9"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/chelik_name"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:ems="10"
+        android:hint="Например, Ivanov Ivan..."
+        android:inputType="text" />
+
+    <Spinner
+        android:id="@+id/instrumentSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:entries="@array/instruments" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="166dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/guitar_image" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="207dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Цена заказа:"
+            android:textColor="#8C8686"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_below="@+id/textView3"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginBottom="116dp"
+            android:text="0"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_below="@+id/textView3"
+            android:layout_alignEnd="@+id/textView3"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="43dp"
+            android:layout_marginBottom="117dp"
+            android:text="$"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="115dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/textView3"
+            android:text="Количество товара:"
+            android:textColor="#8C8686"
+            android:textSize="16sp"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView6"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="315dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginBottom="118dp"
+            android:text="0"
+            android:textColor="#8C8686"
+            android:textSize="16sp"
+            tools:ignore="NotSibling" />
+
+        <Button
+            android:id="@+id/minusButton"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView6"
+            android:layout_alignStart="@+id/textView6"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="100dp"
+            android:text="-"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/plusButton"
+            android:layout_width="56dp"
+            android:layout_height="55dp"
+            android:layout_below="@+id/textView6"
+            android:layout_alignEnd="@+id/textView6"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="-1dp"
+            android:layout_marginBottom="100dp"
+            android:text="+"
+            android:textAllCaps="false"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="390dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android:text="Добавить в корзину"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#2988AE"
+        android:textColorLink="#247F97" />
+
+</LinearLayout>
